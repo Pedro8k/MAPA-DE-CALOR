@@ -124,7 +124,6 @@ h4 {
 }
 
 /* Ícones */
-
 .small-icon{
   width: 24px;
   height: 24px;
@@ -225,4 +224,141 @@ h4 {
 .swal__title--h2{
   font-size: var(--lg-text);
   color: var(--primary-color);
+}
+
+/* Estilos de sanea-landing.component.css */
+.landing__hero {
+    /* Cor de fundo baseada na imagem */
+    background-color: var(--primary-color); 
+    background-image: var(--background-image); /* Se você quiser o fundo de imagem */
+    padding: var(--space-8) 0; 
+    min-height: 50vh; /* Ajuste a altura do hero */
+    width: 100%;
+}
+
+.landing__header {
+    width: 90%; 
+    max-width: 1200px;
+    justify-content: space-between;
+    margin-bottom: var(--space-12);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.hero__content {
+    padding: var(--space-8) var(--space-4);
+    max-width: 800px;
+    gap: var(--space-4);
+}
+
+.hero__subtitle {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Seção de descrição */
+.landing__description {
+    padding: var(--space-16);
+    gap: var(--space-8);
+    background-color: var(--background-color);
+}
+
+.description__text {
+    max-width: 900px;
+    text-align: left;
+}
+
+.benefits__list {
+    margin-top: var(--space-6);
+    list-style: none; /* Remove o marcador padrão de lista */
+    padding-left: 0;
+}
+
+.benefits__list li {
+    margin-bottom: var(--space-2);
+}
+
+/* CTA Secundário */
+.landing__cta-secondary {
+    background-color: var(--tertiary-color);
+    padding: var(--space-12);
+    gap: var(--space-4);
+    margin: var(--space-12) 0;
+}
+
+strong{
+  color: white;
+}
+
+.negrito-preto{
+  color: black;
+}
+
+/* Estilos transferidos do HTML (inline) */
+
+.landing__header {
+    /* (do HTML) */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 0;
+}
+
+.hero__content {
+    /* (do HTML) */
+    margin-top: -30px; 
+    text-align: center;
+}
+
+.logo-container {
+    /* Novo seletor para o div com a imagem e título do logo */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    /* Estilo para a imagem do logo */
+    max-width: 120px; 
+    height: auto; 
+    margin-right: 10px;
+}
+
+.logo-title {
+    /* Estilo para o H1 do logo */
+    color: var(--white-font-color); 
+    margin: 0;
+}
+
+.hero__title {
+    /* Estilos para H3 e H4 dentro de hero__content (adicionados no HTML) */
+    color: var(--white-font-color);
+}
+
+.button__cta {
+    /* Estilos para ambos os botões CTA (adicionados no HTML) */
+    margin-top: var(--space-8); 
+    background-color: white; 
+    color: #2A526A; 
+    border-color: white;
+}
+
+.landing__cta-secondary {
+    /* Estilos para a seção CTA secundária (adicionados no HTML) */
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-top: 40px; 
+    padding-bottom: 40px; 
+    background-color: #2A526A;
+}
+
+.landing__cta-secondary .section__title--black,
+.landing__cta-secondary .paragraph-text {
+    /* Estilos de texto da CTA secundária (adicionados no HTML) */
+    color: var(--white-font-color);
 }
